@@ -1,9 +1,60 @@
 /* game board table */
+body{
+  background-image: url("https://wallpaperaccess.com/full/1312821.jpg");
+  /* background-image: url("https://media.istockphoto.com/videos/donuts-background-video-id1303489561?s=640x640"); */
+}
+
+mark{
+  background-color: rgb(250,250,250, 0.95);
+}
+
+
+#game {
+  /* width: 60%;
+  height: 60%; */
+  display: flex;
+  justify-content: center;
+  
+}
+
+h1{
+  font-family: 'Rampart One', cursive;
+  text-align: center;
+  font-size: 3rem;
+  border-top: 10px;
+  border-bottom: 5px;
+  margin-bottom: 5px;
+  background-color: rgb(93, 209, 233, 0.45);
+}
+
+p{
+  text-align: center;
+  font-size: 1rem;
+}
+hr {
+  position: relative;
+  /* top: 10px; */
+        border: none;
+        height: 3px;
+        background: #666;
+        margin-bottom: 30px;
+}
+
+#extra-shade{
+  margin: 0, auto;
+  flex: center;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(250,250,250,0.90);
+}
 
 #board td {
-  width: 50px;
-  height: 50px;
+  
+  width: 65px;
+  height: 65px;
   border: solid 1px #666;
+  background-color: rgba(231, 140, 209, 0.30);
+  
 }
 
 /* pieces are div within game table cells: draw as colored circles */
@@ -11,17 +62,23 @@
 .piece {
   /* TODO: make into circles */
   margin: 5px;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   border-radius: 50%;
 }
 
-div .Red {
-  background-color: red;
+div .Mint {
+  /* background-color: red; */
+  background-image: url("https://clipart.world/wp-content/uploads/2020/09/Donut-clipart-transparent-6.png");
+  background-size: cover;
+  display: block;
 }
 
-div .Blue {
-  background-color: blue;
+div .Strawberry {
+  /* background-color: blue; */
+  background-image: url("https://clipart.world/wp-content/uploads/2020/09/Donut-clipart-transparent.png");
+  background-size: cover;
+  display: block;
 }
 
 /* TODO: make pieces red/blue,  depending on player 1/2 piece */
@@ -33,6 +90,9 @@ div .Blue {
 }
 
 #column-top td:hover {
-  background-color: gold;
+  background-image: url("https://i.etsystatic.com/23285826/r/il/9828e2/3034230746/il_570xN.3034230746_fp76.jpg");
+  background-size: cover;
+  display: block;
+  /* background-color: gold; */
 }
 

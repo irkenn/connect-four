@@ -8,7 +8,7 @@
 const WIDTH = 7;
 const HEIGHT = 6;
 
-let currPlayer = "Blue"; // active player: 1 or 2
+let currPlayer = "Mint"; // active player: 1 or 2
 const board = []; // array of rows, each row is array of cells  (board[y][x])
 
 /** makeBoard: create in-JS board structure:
@@ -56,8 +56,8 @@ function makeHtmlBoard() {
 }
 
 const togglePlayer = () => {
-  return currPlayer === "Blue" ? currPlayer = "Red" : currPlayer === "Red" ?
-  currPlayer = "Blue" : currPlayer = "Red";
+  return currPlayer === "Mint" ? currPlayer = "Strawberry" : currPlayer === "Strawberry" ?
+  currPlayer = "Mint" : currPlayer = "Strawberry";
 }
 
 //The counter array keeps track of all y coordinates and helps to determine if there are any remaining moves in the game
@@ -119,7 +119,7 @@ function handleClick(evt) {
 
   // check for win
   if (checkForWin()) {
-    return endGame(`Player ${currPlayer} won!`);
+    return endGame(`${currPlayer} player won!`);
   }
 
   else if(checkForTie()){
